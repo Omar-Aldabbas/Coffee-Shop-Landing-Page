@@ -21,7 +21,7 @@ Welcome to the **Coffee Shop Landing Page**! This is a simple and elegant landin
 To run this project locally:
 1. Clone the repository:
    ```sh
-   git clone https://github.com/omar-aldabbas/coffee-shop-landing-page.git
+   git clone https://github.com/Omar-Aldabbas/coffee-shop-landing-page.git
    ```
 2. Open `index.html` in your browser.
 

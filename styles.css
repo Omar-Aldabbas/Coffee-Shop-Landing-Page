@@ -33,7 +33,7 @@ h1 {
 }
 #header {
     width: 100%;
-    min-height: 10vh;
+
 }
 #flare {
     font-size: 0.875rem;
@@ -56,10 +56,21 @@ nav  {
 }
 nav ul  {
     margin: 15px 10px 15px 0;
+    max-height: 4rem;
 }
 nav ul a {
     margin: 0 10px 0 10px;
-    font-size: clamp(0.5rem, 0.8rem + 0.1vw, 2rem);
+    font-size: clamp(0.5rem, 0.5rem + 0.5vw, 2rem);
+}
+#headlogo {
+    max-width: 20%;
+    height: auto;
+}
+#leftSide {
+    font-size: 1.06rem;
+    display: flex;
+    margin: 0;
+    max-height: 4rem;
 }
 #rightSide nav {
     gap: 2rem;
@@ -110,7 +121,7 @@ nav ul a {
 }
 #logo-image {
     mix-blend-mode: multiply;
-    width: 40%;
+    width: min(40%,10vw);
 }
 #sup-image {
     width: min(17vw, 14rem);
@@ -128,6 +139,7 @@ nav ul a {
 #stripe p {
     font-size: clamp(0.4rem, 0.4rem + 0.4vw, 3rem);
     padding: 5px;
+    margin: 0 auto;
 }
 .pink {
     background-color: var(--bg-color-pink);
@@ -153,13 +165,7 @@ nav ul a {
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    flex: 1; 
     padding: 1rem;
-}
-.product h2{
-    font-weight: 500;
-    font-size: 1.5rem;
-    letter-spacing: 0.5px;
 }
 .product img {
     mix-blend-mode: multiply;
@@ -197,10 +203,8 @@ h2 {
     text-align: center;
     gap: 1rem;
 }
-#sixthPart {
+.lb {
     background-color: var(--bg-color-lb);
-    display: flex;
-    justify-content: space-between;
 }
 #rotate-container {
     display: flex;
@@ -281,7 +285,6 @@ button {
     margin: 0;
     padding: 1rem;
     width: 40%;
-    font-size: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -309,7 +312,7 @@ button {
 
 }
 .information p:first-of-type {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 .information p:last-of-type {
     font-size: clamp(0.3rem, 0.3rem + 0.6vw, 1rem);
@@ -323,6 +326,7 @@ button {
     background-image: url('images/rev-png-4.png.jpg');
     background-size: cover;
     background-position: center;
+    
 }
 #reserveTable p {
     font-size: clamp(1rem, 1rem + 1vw , 3.5rem);
@@ -518,3 +522,215 @@ button:hover {
     color: red;
     transform: scale(1.05);
 }
+@media (max-width:768px) {
+    body {
+        max-width: 100%;
+    }
+    .sqrd-text {
+        font-size: clamp(0.3rem, 0.3rem + 1vw, 2rem);
+    }
+    nav ul {
+        margin: 0 10px;
+    }
+    nav ul a{
+        margin: 0 5px;
+        font-size: clamp(0.3rem, 0.3rem + 0.5vw, 0.7rem);
+    }
+    h1 {
+        font-size: clamp(1rem , 1rem + 5vw, 2.5rem);
+        padding: 1rem;
+        margin: 0;
+    }
+    #aiLogo {
+         transform: scale(1.5);
+         mix-blend-mode: multiply;
+         margin-left: -1rem;
+    }
+    .two-sides {
+        display: flex;
+        flex-direction: column;
+    }
+    #hero {
+        height: 25vh;
+    }
+    #slogan {
+        gap: 5rem;
+    }
+    #text-image {
+        margin-left: -4rem;
+    }
+    .firstImg {
+        width: 100%;
+        height: 25vh;
+        background-size: cover;
+    }
+    .sub-container {
+        flex-direction: column;
+    }
+    .description h1 {
+        font-size: clamp(0.5rem, 0.5rem + 1vw, 3rem);
+        margin: 0;
+        margin-bottom: 1rem;
+        letter-spacing: 1px;
+    }
+    .description p{
+        margin-bottom: 0;
+    }
+    #rotate-container {
+        width: 100%;
+    }
+    .rotate90 {
+        writing-mode: horizontal-tb;
+        transform: none;
+        height: 100%;
+        font-size: clamp(1rem, 1rem + 2vw, 2rem);
+    }
+    .lb h1 {
+        font-size: clamp;
+    }
+    .image-text-container {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .image-text-container img {
+        width: 100%;
+        padding: 1.5rem;
+        margin: 0;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1.5rem;
+        padding: 0;
+        height: 100%;
+    }
+    .contact p {
+        margin: 0;
+        padding: 0.5rem;
+        line-height: normal;
+    }
+    .contactButton {
+        width: 30%;
+        padding: 0.5rem 0;
+        margin: 0.5rem;
+        text-align: center;
+    }
+    #allProducts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #haveFood {
+        flex-direction: row;
+        width: 100%;
+    }
+    #haveFood h1 {
+        font-size: 1rem;
+    }
+    #sideInfo {
+        width: 100%;
+    }
+    form {
+        flex-wrap: wrap;
+    }
+    button {
+        width: 20%;
+        height: 1.5rem;
+    }
+    select {
+        font-size: 0.5rem;
+    }
+    #ourTeam {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #blogContainer {
+        flex-direction: column;
+    }
+    #blog {
+        flex-direction: row;
+        width: 100%;
+        gap: 1rem;
+    }
+    #news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+    }
+    .post {
+        flex-direction: column;
+    }
+    .post-info{
+        margin-left: 0.8rem;
+        padding: 0;
+    }
+    .post-info p:last-of-type {
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 0;
+    }
+    .post img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    #career {
+        margin: 0 1.5rem;
+    }
+    #career p:not(:first-of-type) {
+        padding: 0 1rem;
+        margin: 0;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+    #logos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+    }
+    #logos img {
+        width: 100%;
+        padding: 1rem;
+    }
+    #menuSection {
+        padding: 0;
+        margin: 1rem 0;
+    }
+    .item {
+        padding: 0.2rem 0;
+        width: 100%;
+    }
+    .have-title h1 {
+        line-height: max(2rem, 5vh);
+        font-weight: 500;
+        padding: 5px;
+    }
+    #gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        margin: 0.5rem;
+    }
+    footer {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    #footerLogo {
+        flex-direction: column;
+    }
+    .footer-link {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .footer-link a {
+        max-width: 5.5rem;
+        max-height: 1.5rem;
+        gap: 0;
+    }
+    #footerimg {
+        width: 30%;
+    }
+}
+@media (max-width:480px)

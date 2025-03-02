@@ -17,14 +17,14 @@
             </div>
             <div id="head-bar">
                 <nav>
-                    <ul>
-                        <a href="" class="lined">Home</a>
-                        <a href="" class="lined">Pages</a>
-                        <a href="" class="lined">Shop</a>
-                        <a href="" class="lined">Blog</a>
+                    <ul id="leftSide">
+                        <a href="#" class="lined">Home</a>
+                        <a href="#" class="lined">Pages</a>
+                        <a href="#" class="lined">Shop</a>
+                        <a href="#" class="lined">Blog</a>
                     </ul>
                 </nav>
-                <img src="images/logo-black-1.png.jpg" alt="Logo"/>
+                <img src="images/logo-black-1.png.jpg" alt="Logo" id="headlogo"/>
                 <div id="rightSide">
                     <nav>
                         <ul>
@@ -33,14 +33,14 @@
                             <div id="search-container">
                                 <input type="text" name="search" id="search-bar" placeholder="Find......">
                         </ul>
-                        <a href="#"><img src="images/Frame.jpg" alt="Ai logo"/></a>
+                        <a href="#" id="aiLogo"><img src="images/Frame.jpg" alt="AI logo" /></a>
                     </nav>
                     
                 </div>
             </div>
         </section>
         <section class="two-sides border" id="heroContainer">
-            <img src="images/main-home-rev-slider-3.jpg.jpg" alt="Sip-By-Sip" />
+            <img src="images/main-home-rev-slider-3.jpg.jpg" alt="Sip-By-Sip" class="firstImg"/>
             <div id="hero">
                 <img src="images/rev-png-4.png.jpg" alt="bg-Sip-By-Sip"  id="bg-image"/>
                 <div id="slogan">
@@ -104,9 +104,9 @@
                 <p class="sqrd-text">Henry Monro</p>
                 <img src="images/div.swiper-pagination.jpg" alt="swip" >
             </div>
-            <img src="images/div.elementor-widget-wrap.jpg" alt="Black Coffee" id="blackCoffee">
+            <img src="images/div.elementor-widget-wrap.jpg" alt="Black Coffee" id="blackCoffee" class="firstImg">
         </section>
-        <section class="sub-container border" id="sixthPart">
+        <section class="sub-container border lb" >
             <div id="rotate-container">
                 <h1 class="rotate90 border">Lisbon Coffee Salon</h1>
                 <h1 class="rotate90 border">Berlin Coffee Roastery</h1>
@@ -130,7 +130,7 @@
         </section>
         <section class="sub-container have-title border">
             <h1>THE COFFEE THAT'S RIGHT FOR YOU </h1>
-            <div class="product-container">
+            <div class="product-container" id="allProducts">
                 <div class="product border">
                     <img src="images/H1-product-list-3.png.jpg" alt="French Roast"/>
                     <p>French Roast</p>
@@ -153,7 +153,7 @@
                 </div>
             </div>
         </section>
-        <section class="sub-container pink border" id="seventh">
+        <section class="sub-container pink border">
             <div class="description" id="haveFood">
                 <h1>SWING BY OUR PLACE WE ALSO<br>
                     HAVE FOOD.</h1>
@@ -226,7 +226,6 @@
                     <option class="sqrd-text">2 persons</option>
                     <option class="sqrd-text">3 persons</option>
                     <option class="sqrd-text">4 persons</option>
-
                 </select>
                 <input type="date" class="sqrd-text" name="date" id="date" placeholder="21.10.22">
                 <input type="time" class="sqrd-text" name="time" id="time" placeholder="11:00">
@@ -427,7 +426,7 @@
         </section>
         <footer class="border" id="footer">
             <div id="footerLogo">
-                <img src="images/check-logo.jpg" alt="Coffee shop logo">
+                <img src="images/check-logo.jpg" alt="Coffee shop logo" id="footerimg">
                 <div>
                     <p id="shopName">
                         Early Birds
